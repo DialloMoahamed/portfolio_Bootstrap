@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Attahir Diallo — Portfolio</title>
+  <meta name="description" content="Développeur Frontend · Niamey, Niger" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR BOOTSTRAP
+  ══════════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-xl">
+      <a class="navbar-brand" href="#home">&lt;Mohamed /&gt;</a>
+
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav gap-1 py-3 py-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section id="home">
+    <!-- Anneaux décoratifs -->
+    <div class="deco-ring d-none d-lg-block" style="width:480px;height:480px;top:-90px;right:-90px;opacity:.5;"></div>
+    <div class="deco-ring d-none d-lg-block" style="width:280px;height:280px;top:60px;right:60px;"></div>
+
+    <div class="container-xl">
+      <!-- Badge -->
+      <div class="hero-eyebrow">Available for work</div>
+
+      <!-- Nom -->
+      <h1 class="hero-name">
+        <span class="d-block" style="font-size:clamp(20px,3vw,36px);letter-spacing:0;font-weight:400;color:var(--muted);">Hello, I'm</span>
+        <span class="accent-word">Mohamed</span>
+        <span class="outline">Attahir</span>
+      </h1>
+
+      <!-- Sous-titre -->
+      <p class="hero-sub">
+        I build <strong>beautiful, performant</strong> digital products that live at the intersection
+        of design and engineering. Specializing in
+        <span class="typed-words">HTML / CSS &amp; JavaScript &amp; React</span>
+      </p>
+
+      <!-- CTA -->
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary-custom">Voir mes projets</a>
+        <a href="#contact" class="btn-ghost-custom">Me contacter</a>
+        <a href="#" class="btn-cv-custom" download="CV_Mohamed_Attahir_Diallo.pdf">
+          <i class="bi bi-download"></i> Télécharger CV
+        </a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        Scroll to explore
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+  <section id="about">
+    <div class="container-xl">
+      <div class="row g-5 align-items-center">
+
+        <!-- Colonne gauche : carte -->
+        <div class="col-lg-5">
+          <div class="about-card">
+            <div class="about-avatar">⚡</div>
+            <div class="about-text">
+              <p>I'm a <strong>front end developer</strong> with 2+ years of experience crafting polished web applications. Passionate about clean architecture and pixel-perfect interfaces.</p>
+              <p>When I'm not coding, you'll find me exploring generative art, contributing to open-source, or obsessing over typography.</p>
+              <p>Currently based in <strong>Niamey, Niger</strong> — open to remote opportunities worldwide.</p>
+            </div>
+            <!-- Stats -->
+            <div class="row g-2 mt-3">
+              <div class="col-6">
+                <div class="stat-item">
+                  <div class="stat-num">2+</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-item">
+                  <div class="stat-num">30+</div>
+                  <div class="stat-label">Projects Shipped</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-item">
+                  <div class="stat-num">12+</div>
+                  <div class="stat-label">Happy Clients</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-item">
+                  <div class="stat-num">100%</div>
+                  <div class="stat-label">Commitment</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colonne droite : texte -->
+        <div class="col-lg-7">
+          <div class="section-tag">About</div>
+          <h2 class="section-title">
+            Crafting digital<br>
+            <span style="color:var(--accent);">experiences</span>
+          </h2>
+          <p style="font-size:14px;line-height:1.85;color:var(--muted);margin-bottom:20px;">
+            My journey started with a deep curiosity for how things work on the web. Over the years,
+            I've evolved from writing simple HTML pages to building full-featured React applications
+            with modern tooling.
+          </p>
+          <p style="font-size:14px;line-height:1.85;color:var(--muted);margin-bottom:34px;">
+            I believe in <strong style="color:var(--text);font-weight:400;">purposeful design</strong>
+            and <strong style="color:var(--text);font-weight:400;">performant code</strong>.
+            Every project I take on gets my full attention — from architecture decisions to pixel-level details.
+          </p>
+          <a href="#contact" class="btn-primary-custom">Travaillons ensemble →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       SKILLS
+  ══════════════════════════════════════ -->
+  <section id="skills">
+    <div class="container-xl">
+      <div class="section-tag">Expertise</div>
+      <h2 class="section-title">Tools &amp; <span style="color:var(--accent);">Technologies</span></h2>
+
+      <div class="row g-4 mt-2">
+
+        <!-- HTML 90% -->
+        <div class="col-md-6">
+          <div class="skill-wrap">
+            <div class="skill-header">
+              <span class="skill-name-txt">HTML</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:90%;background:#E34F26;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS 85% -->
+        <div class="col-md-6">
+          <div class="skill-wrap">
+            <div class="skill-header">
+              <span class="skill-name-txt">CSS</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:85%;background:#1572B6;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bootstrap 80% -->
+        <div class="col-md-6">
+          <div class="skill-wrap">
+            <div class="skill-header">
+              <span class="skill-name-txt">Bootstrap</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:80%;background:#7952B3;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tailwind CSS 60% -->
+        <div class="col-md-6">
+          <div class="skill-wrap">
+            <div class="skill-header">
+              <span class="skill-name-txt">Tailwind CSS</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:60%;background:#38BDF8;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- JavaScript 75% -->
+        <div class="col-md-6">
+          <div class="skill-wrap">
+            <div class="skill-header">
+              <span class="skill-name-txt">JavaScript</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:75%;background:#F7DF1E;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TypeScript 55% -->
+        <div class="col-md-6">
+          <div class="skill-wrap">
+            <div class="skill-header">
+              <span class="skill-name-txt">TypeScript</span>
+              <span class="skill-pct">55%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:55%;background:#3178C6;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- React 60% -->
+        <div class="col-md-6">
+          <div class="skill-wrap">
+            <div class="skill-header">
+              <span class="skill-name-txt">React</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:60%;background:#61DAFB;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next.js 55% -->
+        <div class="col-md-6">
+          <div class="skill-wrap">
+            <div class="skill-header">
+              <span class="skill-name-txt">Next.js</span>
+              <span class="skill-pct">55%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:55%;background:#aaaaaa;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- D3.js 65% -->
+        <div class="col-md-6">
+          <div class="skill-wrap">
+            <div class="skill-header">
+              <span class="skill-name-txt">D3.js</span>
+              <span class="skill-pct">65%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:65%;background:#F9A03C;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Node.js 58% -->
+        <div class="col-md-6">
+          <div class="skill-wrap">
+            <div class="skill-header">
+              <span class="skill-name-txt">Node.js</span>
+              <span class="skill-pct">58%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:58%;background:#68A063;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQL 62% -->
+        <div class="col-md-6">
+          <div class="skill-wrap">
+            <div class="skill-header">
+              <span class="skill-name-txt">SQL</span>
+              <span class="skill-pct">62%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:62%;background:#00758F;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PostgreSQL 55% -->
+        <div class="col-md-6">
+          <div class="skill-wrap">
+            <div class="skill-header">
+              <span class="skill-name-txt">PostgreSQL</span>
+              <span class="skill-pct">55%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:55%;background:#336791;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Docker 50% -->
+        <div class="col-md-6">
+          <div class="skill-wrap">
+            <div class="skill-header">
+              <span class="skill-name-txt">Docker</span>
+              <span class="skill-pct">50%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:50%;background:#2496ED;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Git 75% -->
+        <div class="col-md-6">
+          <div class="skill-wrap">
+            <div class="skill-header">
+              <span class="skill-name-txt">Git</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:75%;background:#F05032;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figma 60% -->
+        <div class="col-md-6">
+          <div class="skill-wrap">
+            <div class="skill-header">
+              <span class="skill-name-txt">Figma</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:60%;background:#F24E1E;"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════ -->
+  <section id="projects">
+    <div class="container-xl">
+      <div class="section-tag">Work</div>
+      <h2 class="section-title">Featured <span style="color:var(--accent);">Projects</span></h2>
+
+      <div class="row g-4 mt-2">
+
+        <!-- 1. Site E-Commerce -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" style="--card-color:#00D9FF;">
+            <div class="project-icon" style="color:#00D9FF;">◈</div>
+            <div class="project-title">Site E-Commerce</div>
+            <div class="project-desc">Site de vente en ligne complet avec catalogue produits, panier d'achat et interface utilisateur soignée. Projet fullstack démontrant la gestion de données et l'expérience d'achat.</div>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a class="project-btn project-btn-primary" href="https://diallomoahamed.github.io/SiteEcommerce" target="_blank" rel="noopener" style="background:#00D9FF;">
+                <i class="bi bi-globe2"></i> Demo live
+              </a>
+              <a class="project-btn project-btn-ghost" href="https://github.com/DialloMoahamed/SiteEcommerce" target="_blank" rel="noopener">
+                <i class="bi bi-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Woudjoula -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" style="--card-color:#A855F7;">
+            <div class="project-icon" style="color:#A855F7;">✦</div>
+            <div class="project-title">Woudjoula</div>
+            <div class="project-desc">Application web locale développée pour répondre à un besoin concret. Interface moderne et fonctionnelle pensée pour les utilisateurs.</div>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a class="project-btn project-btn-primary" href="https://diallomoahamed.github.io/Woujdoula/" target="_blank" rel="noopener" style="background:#A855F7;">
+                <i class="bi bi-globe2"></i> Demo live
+              </a>
+              <a class="project-btn project-btn-ghost" href="https://github.com/DialloMoahamed/Woudjoula" target="_blank" rel="noopener">
+                <i class="bi bi-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Agence -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" style="--card-color:#F59E0B;">
+            <div class="project-icon" style="color:#F59E0B;">◎</div>
+            <div class="project-title">Agence</div>
+            <div class="project-desc">Site vitrine pour une agence web avec design professionnel, sections de présentation des services, équipe et portfolio.</div>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a class="project-btn project-btn-primary" href="https://diallomoahamed.github.io/agence/" target="_blank" rel="noopener" style="background:#F59E0B;">
+                <i class="bi bi-globe2"></i> Demo live
+              </a>
+              <a class="project-btn project-btn-ghost" href="https://github.com/DialloMoahamed/Agence" target="_blank" rel="noopener">
+                <i class="bi bi-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Bootstrap Projet -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" style="--card-color:#6366F1;">
+            <div class="project-icon" style="color:#6366F1;">⬡</div>
+            <div class="project-title">Bootstrap Projet</div>
+            <div class="project-desc">Projet de mise en pratique du framework Bootstrap. Intégration responsive avec composants UI avancés : navbar, cartes, grille et formulaires.</div>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">Bootstrap</span><span class="tag">CSS</span>
+            </div>
+            <div class="project-actions">
+              <a class="project-btn project-btn-primary" href="https://diallomoahamed.github.io/bootstrap-projet1" target="_blank" rel="noopener" style="background:#6366F1;">
+                <i class="bi bi-globe2"></i> Demo live
+              </a>
+              <a class="project-btn project-btn-ghost" href="https://github.com/DialloMoahamed/bootstrap-projet1" target="_blank" rel="noopener">
+                <i class="bi bi-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Stock Manager -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" style="--card-color:#10B981;">
+            <div class="project-icon" style="color:#10B981;">◉</div>
+            <div class="project-title">Stock Manager</div>
+            <div class="project-desc">Application de gestion de stock avec suivi des entrées/sorties, tableau de bord et gestion des produits en temps réel.</div>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a class="project-btn project-btn-primary" href="https://diallomoahamed.github.io/Stock-Manager" target="_blank" rel="noopener" style="background:#10B981;">
+                <i class="bi bi-globe2"></i> Demo live
+              </a>
+              <a class="project-btn project-btn-ghost" href="https://github.com/DialloMoahamed/Stock-Manager" target="_blank" rel="noopener">
+                <i class="bi bi-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Header Tech App -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" style="--card-color:#F43F5E;">
+            <div class="project-icon" style="color:#F43F5E;">⚡</div>
+            <div class="project-title">Header Tech App</div>
+            <div class="project-desc">Composant header moderne pour application tech, avec navigation responsive, animations CSS et design system cohérent.</div>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a class="project-btn project-btn-primary" href="https://diallomoahamed.github.io/hederTeckApp" target="_blank" rel="noopener" style="background:#F43F5E;">
+                <i class="bi bi-globe2"></i> Demo live
+              </a>
+              <a class="project-btn project-btn-ghost" href="https://github.com/DialloMoahamed/hederTeckApp" target="_blank" rel="noopener">
+                <i class="bi bi-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Carbone Emission -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" style="--card-color:#22D3EE;">
+            <div class="project-icon" style="color:#22D3EE;">◈</div>
+            <div class="project-title">Carbone Emission</div>
+            <div class="project-desc">Dashboard de visualisation des émissions de CO₂ par pays, construit avec D3.js. Affiche des graphiques interactifs : carte mondiale, barres et camembert.</div>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span><span class="tag">D3.js</span><span class="tag">HTML</span><span class="tag">CSS</span>
+            </div>
+            <div class="project-actions">
+              <a class="project-btn project-btn-primary" href="https://diallomoahamed.github.io/Carbone_Emission" target="_blank" rel="noopener" style="background:#22D3EE;">
+                <i class="bi bi-globe2"></i> Demo live
+              </a>
+              <a class="project-btn project-btn-ghost" href="https://github.com/DialloMoahamed/Carbone_Emission" target="_blank" rel="noopener">
+                <i class="bi bi-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. École -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" style="--card-color:#FB923C;">
+            <div class="project-icon" style="color:#FB923C;">◎</div>
+            <div class="project-title">École</div>
+            <div class="project-desc">Système de gestion scolaire : suivi des élèves, des classes, des notes et des présences. Interface intuitive pour administrateurs et enseignants.</div>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a class="project-btn project-btn-primary" href="https://diallomoahamed.github.io/ecole/" target="_blank" rel="noopener" style="background:#FB923C;">
+                <i class="bi bi-globe2"></i> Demo live
+              </a>
+              <a class="project-btn project-btn-ghost" href="https://github.com/DialloMoahamed/ecole" target="_blank" rel="noopener">
+                <i class="bi bi-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Facturation -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card" style="--card-color:#34D399;">
+            <div class="project-icon" style="color:#34D399;">◉</div>
+            <div class="project-title">Facturation</div>
+            <div class="project-desc">Application de facturation avec création de devis et factures, gestion des clients et calcul automatique des totaux et TVA.</div>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a class="project-btn project-btn-primary" href="https://diallomoahamed.github.io/Facturation/" target="_blank" rel="noopener" style="background:#34D399;">
+                <i class="bi bi-globe2"></i> Demo live
+              </a>
+              <a class="project-btn project-btn-ghost" href="https://github.com/DialloMoahamed/facturation" target="_blank" rel="noopener">
+                <i class="bi bi-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-lg-7">
+
+          <div class="section-tag">Contact</div>
+          <h2 class="section-title">
+            Let's build something <span style="color:var(--accent);">great</span>
+          </h2>
+          <p class="contact-desc">
+            Tu as un projet en tête, ou tu veux juste dire bonjour ? Mon inbox est toujours ouvert. Je te réponds dans les 24h.
+          </p>
+
+          <!-- Formulaire -->
+          <form action="https://formsubmit.co/mohamedattahirdiallo@gmail.com" method="POST" novalidate>
+            <!-- FormSubmit config -->
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio" />
+            <input type="hidden" name="_next" value="#contact" />
+
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <label class="form-label-custom">Nom <span style="color:var(--accent)">*</span></label>
+                <input type="text" name="name" class="form-control-custom" placeholder="Mohamed Attahir" required />
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label-custom">Email <span style="color:var(--accent)">*</span></label>
+                <input type="email" name="email" class="form-control-custom" placeholder="toi@email.com" required />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label-custom">Sujet <span style="color:var(--accent)">*</span></label>
+              <input type="text" name="subject" class="form-control-custom" placeholder="Demande de collaboration" required />
+            </div>
+
+            <div class="mb-4">
+              <label class="form-label-custom">Message <span style="color:var(--accent)">*</span></label>
+              <textarea name="message" class="form-control-custom" placeholder="Dis-moi tout sur ton projet..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary-custom">
+              Envoyer le message →
+            </button>
+          </form>
+
+        </div>
+
+        <!-- Liens sociaux -->
+        <div class="col-lg-4 offset-lg-1 mt-5 mt-lg-0 d-flex flex-column justify-content-center">
+          <a class="social-link" href="https://github.com/DialloMoahamed" target="_blank" rel="noopener">
+            <span class="social-icon">⌥</span> GitHub
+          </a>
+          <a class="social-link" href="#">
+            <span class="social-icon">◈</span> LinkedIn
+          </a>
+          <a class="social-link" href="#">
+            <span class="social-icon">◉</span> Twitter / X
+          </a>
+          <a class="social-link" href="mailto:mohamedattahirdiallo@gmail.com">
+            <span class="social-icon">✉</span> mohamedattahirdiallo@gmail.com
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer>
+    Designed &amp; built with ♥ by <span>Mohamed Attahir</span> · <span>2025</span>
+  </footer>
+
+  <!-- Bootstrap 5 JS (pour le menu hamburger uniquement) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
